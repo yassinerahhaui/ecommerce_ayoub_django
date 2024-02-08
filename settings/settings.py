@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'store.apps.StoreConfig',
+    'contact.apps.ContactConfig',
 ]
 
 MIDDLEWARE = [
