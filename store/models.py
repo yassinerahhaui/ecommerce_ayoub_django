@@ -37,6 +37,7 @@ class Product(models.Model):
   created_at = models.DateTimeField(auto_now=True)
   last_update = models.DateTimeField(auto_now_add=True,null=True)
   image = models.ImageField(upload_to=product_upload,max_length=500)
+  quantity = models.IntegerField(default=1)
   category = models.ForeignKey(Category, related_name="product_category", on_delete=models.CASCADE,null=True)
 
   def __str__(self):
